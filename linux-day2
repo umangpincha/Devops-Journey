@@ -1,0 +1,11 @@
+## Day 2
+> To change permission : chmod 500 filename
+> To create group : groupadd groupname
+> To create user : useradd -m username
+> To add user in group : gpasswd -a username groupname  [here -a flag is to add]
+> To check users in which file ? -> /etc/passwd
+> To check groups in which file ? -> /etc/group
+> To change groupname of a file -> chgrp groupname filename 
+  (Eg: chgrp tapusena boom.txt) so now boom.txt groupname will be tapusena instead of ubuntu and all users in tapusena group will have the permission which boom.txt has for its groupmemebers.
+> scp -i "file.pem" source dest
+
