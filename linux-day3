@@ -1,0 +1,20 @@
+grep INFO app
+grep info app
+grep -i INFO app
+grep -i trace app
+grep -i trace app > trace_only_for_qa
+ll
+grep -i trace trace_only_for_qa
+awk '{print $1}' trace_only_for_qa
+awk '{print $1 $2}' trace_only_for_qa
+grep -i trace trace_only_for_qa
+awk '{print $1 $2 $4}' trace_only_for_qa
+awk '{print $1 $2 $5}' trace_only_for_qa
+awk '{print NR $1 $2 $5}' trace_only_for_qa
+awk '{print NR,$1,$2,$5}' trace_only_for_qa
+awk '{NR>=1 && NR<=3 print NR,$1,$2,$5}' trace_only_for_qa
+awk 'NR>=1 && NR<=3 {print NR,$1,$2,$5}' trace_only_for_qa
+awk /INFO/ trace_only_for_qa
+awk // trace_only_for_qa
+find / -name trace_*
+find ~/ -name trace_*
